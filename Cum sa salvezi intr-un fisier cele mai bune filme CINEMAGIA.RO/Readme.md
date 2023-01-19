@@ -1,4 +1,4 @@
-This project is for saving in a file movies from IMDB that have a rating
+This project is for saving in a file movies from CINEMAGIA.RO that have a rating
 greater then 8
 
 Needed packages 
