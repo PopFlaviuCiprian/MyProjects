@@ -1,6 +1,7 @@
 import unittest
 import HtmlTestRunner
 from testing_site_Emag import Emag
+from tests_press_alerts import Alerts
 
 class TestSuite(unittest.TestCase):
     def test_suite(self):
@@ -8,7 +9,8 @@ class TestSuite(unittest.TestCase):
         test_to_run = unittest.TestSuite()
 
         test_to_run.addTests([
-            unittest.defaultTestLoader.loadTestsFromTestCase(Emag)
+            unittest.defaultTestLoader.loadTestsFromTestCase(Emag),
+            unittest.defaultTestLoader.loadTestsFromTestCase(Alerts)
             # here we can add more tests
         ])
 
