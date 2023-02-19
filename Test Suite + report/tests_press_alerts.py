@@ -58,7 +58,7 @@ class Alerts(unittest.TestCase):
         self.assertEqual(result_text, f"You entered: {text}")
 
 
-    def test_press_cancel_primpt(self):
+    def test_press_cancel_prompt(self):
         self.chrome.find_element(*self.PROMPT_BUTTON).click()
         obj = self.chrome.switch_to.alert
         obj.dismiss()
