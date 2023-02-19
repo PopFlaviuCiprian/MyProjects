@@ -40,9 +40,9 @@ class Login(unittest.TestCase):
         self.chrome.find_element(*self.USER).send_keys("Admin")
         self.chrome.find_element(*self.PASSWORD).send_keys("admin123")
         self.chrome.find_element(*self.LOGIN).click()
-        sleep(5)
+
 
 
     def test_another_type_login(self):
         self.chrome.get(f"https://{self.USER}:{self.PASSWORD}@opensource-demo.orangehrmlive.com/web/index.php/auth/login")
-        sleep(5)
+
