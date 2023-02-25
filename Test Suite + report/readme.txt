@@ -1,4 +1,4 @@
 We have to install :
 pip install selenium
-pip install unittest
+pip install unittest-xml-reporting
 pip install html-testRunner
